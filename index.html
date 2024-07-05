@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Shopping Cart product</h1>
+        <div id="cart">
+            <!-- Product 1 -->
+            <div class="item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS_4QrMWE5YNMFR0jY3CRwCJoP7d__fkHno-w&s" alt="Product 1">
+                <div class="item-details">
+                    <h2>Product 1</h2>
+                    <p>$10.00</p>
+                    <div class="item-actions">
+                        <div class="quantity">
+                            <button onclick="decrementQuantity(0)">-</button>
+                            <span id="quantity0">0</span>
+                            <button onclick="incrementQuantity(0)">+</button>
+                        </div>
+                        <div class="like-button" onclick="toggleLike(0)">
+                            <span id="like0" class="heart">&hearts;</span>
+                        </div>
+                        <button onclick="deleteItem(0)">Delete</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="item">
+                <img src="https://lesdrugstoresdumaroc.com/pub/media/catalog/product/cache/6c6389d4ead42987939a5d97787eb94c/l/p/lpos94.msq330_1_base.jpg" alt="Product 2">
+                <div class="item-details">
+                    <h2>Product 2</h2>
+                    <p>$15.00</p>
+                    <div class="item-actions">
+                        <div class="quantity">
+                            <button onclick="decrementQuantity(1)">-</button>
+                            <span id="quantity1">0</span>
+                            <button onclick="incrementQuantity(1)">+</button>
+                        </div>
+                        <div class="like-button" onclick="toggleLike(1)">
+                            <span id="like1" class="heart">&hearts;</span>
+                        </div>
+                        <button onclick="deleteItem(1)">Delete</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThdXbxdDNH1LdJZZRbuA-0bxVnjTDQipf0rg&s" alt="Product 3">
+                <div class="item-details">
+                    <h2>Product 3</h2>
+                    <p>$20.00</p>
+                    <div class="item-actions">
+                        <div class="quantity">
+                            <button onclick="decrementQuantity(2)">-</button>
+                            <span id="quantity2">0</span>
+                            <button onclick="incrementQuantity(2)">+</button>
+                        </div>
+                        <div class="like-button" onclick="toggleLike(2)">
+                            <span id="like2" class="heart">&hearts;</span>
+                        </div>
+                        <button onclick="deleteItem(2)">Delete</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="total">Total: $<span id="total-price">0.00</span></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
